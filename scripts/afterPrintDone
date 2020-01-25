@@ -1,0 +1,7 @@
+M73 P100 ; end build progress
+G162 X Y F2500; home X and Y axes
+M18; disable all stepper motors
+{% snippet 'disable_hotends' %}
+{% snippet 'disable_bed' %}
+M70 P15 (We <3 Making Things!)
+M72 P1; Play Ta-Da song

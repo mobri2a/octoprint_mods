@@ -1,0 +1,3 @@
+{% if printer_profile.heatedBed %}
+M140 S0
+{% endif %}

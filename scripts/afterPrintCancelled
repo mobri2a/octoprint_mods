@@ -1,0 +1,8 @@
+G162 X Y F2500; home X and Y axes
+M18; disable all stepper motors;
+{% snippet 'disable_hotends' %}
+{% snippet 'disable_bed' %}
+M127; disable fan
+M106 S0;
+M70 P5 (Doh!)
+M72 P1; Play Ta-Da song
